@@ -1,4 +1,4 @@
-module github.com/victorsteven/fullstack
+module github.com/praveencs87/akstechcrm
 
 go 1.12
 
