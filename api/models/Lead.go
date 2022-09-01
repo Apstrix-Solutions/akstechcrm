@@ -93,8 +93,6 @@ func (l *Lead) UpdateALead(db *gorm.DB, pid uint64) (*Lead, error) {
 	var err error
 	db = db.Debug().Model(&Lead{}).Where("id = ?", pid).Take(&Lead{}).UpdateColumns(
 		map[string]interface{}{
-			"title":                p.Title,
-			"content":              p.Content,
 			"ContactTitle":         l.ContactTitle,
 			"ContactFirst":         l.ContactFirst,
 			"ContactMiddle":        l.ContactMiddle,
